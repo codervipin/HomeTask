@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-color: #072244;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container {
+  min-width: 280px;
+  height: 50%;
+  background-color: #fff;
+  border: 1px solid red;
+}
+header .container h1 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 0.4em;
+}
+header .container p {
+  font-size: 0.7em;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 0.25em;
+}
+main {
+  width: 100%;
+  height: 85vh;
+  /* background-color: bisque; */
+}
+main .allNews {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-bottom: 2px solid gray;
+  /* position: relative; */
+  gap: 0.2em;
+}
+main .allNews .category {
+  /* position: absolute; */
+  min-width: 180px;
+  height: 50%;
+  /* border: solid; */
+  /* left: 2%; */
+  float: left;
+  margin-left: 2.4em;
+}
+main .allNews .category select {
+  width: 50%;
+}
+
+main .allNews .emailc {
+  width: 200px;
+  /* position: absolute; */
+  height: 50%;
+  /* border: solid; */
+  /* right: 15%;
+    top: 5%; */
+  float: right;
+  margin-right: 5em;
+}
+main .allNews .emailc input[type="email"] {
+  width: 60%;
+  /* border: solid; */
+}
+main .allNews .emailc button {
+  min-width: 35%;
+  background-color: black;
+  color: #fff;
+}
+main .allNews > h1 {
+  min-width: 220px;
+  height: 50%;
+  font-weight: 900;
+  margin: 0 auto;
+  /* border: solid; */
+  text-align: center;
+}
+
+main article {
+  width: 100%;
+  height: 50%;
+  /* background-color: antiquewhite; */
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+  /* border: solid; */
+}
+
+main article .image {
+  min-width: 180px;
+  height: 180px;
+  /* background-color: gainsboro; */
+  /* border: solid; */
+  /* object-fit: cover; */
+}
+
+
+main article .detail {
+  width: 80%;
+  height: 90%;
+  /* background-color: gainsboro; */
+  /* border: solid; */
+  padding: 0.2em;
+  /* display: flex;
+    flex-direction: column; */
+}
+main article .detail h2 {
+  color: #072244;
+  /* border: solid; */
+}
+main article .detail > div {
+  margin-top: 8px;
+  width: 100%;
+  /* border: solid; */
+}
+main article .detail .posted {
+  height: 15%;
+}
+main article .detail .news {
+  height: 40%;
+  overflow: hidden;
+}
+main article .detail .news p {
+  width: 100%;
+  height: 100%;
+
+  /* border: solid red */
+  line-height: 1.6;
+}
+main article .detail button {
+  margin-top: 10px;
+  width: 150px;
+  height: 35px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px grey;
+  transition: .3s  ease-in-out;
+}
+main article .detail button:hover{
+    transform: scale(1.1);
+}
+
+/* Css for News pages*/
+
+section {
+  width: 100%;
+  height: 85vh;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .newsContainer {
+  width: 70%;
+  height: 75%;
+  border: solid;
+  padding: .8em;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+section .newsContainer .image {
+  width: 400px;
+  height: 220px;
+  background-color: #a59d9d;
+  float: left;
+  margin: 0.5em 1em;
+}
+section .newsContainer p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  line-height: 1.25;
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+    Breakpoint for mobile devices
+*/
+
+@media screen and (max-width: 570px) {
+  main {
+    height: 85vh;
+  }
+  main .allNews .category {
+    margin-left: 0.5em;
+    min-width: 100px;
+    /* border: solid blue; */
+  }
+  main .allNews .category p {
+    font-size: 0.82em;
+  }
+  main .allNews .category select {
+    width: 60%;
+    margin-top: 0.2em;
+  }
+
+  main .allNews h1 {
+    min-width: 100px;
+    font-size: 1.5em;
+    align-items: center;
+    align-content: center;
+  }
+
+  main .allNews .emailc {
+    width: 120px;
+    /* border: solid red; */
+    margin-right: 0.5em;
+  }
+  main .allNews .emailc input[type="email"] {
+    width: 80%;
+    /* border: solid; */
+  }
+  main .allNews .emailc button {
+    min-width: 50%;
+    font-size: 0.6em;
+    /* background-color: red; */
+  }
+  main article {
+    height: 98%;
+  }
+  main article {
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 1em;
+  }
+  main article .detail {
+    height: 60%;
+  }
+  main article .detail .news {
+    height: 42%;
+  }
+  main article .detail .news p {
+    line-height: 1.5;
+  }
+}
+
+/* Break point for newsPages css*/
+@media screen and (max-width:350px){
+    section{
+        height: 210vh;
+    }
+    section .newsContainer{
+        height: 95%;
+        width: 95%;
+    }
+    section .newsContainer .image{
+        width: 90%;
+        height: 225px;
+        object-fit: contain;
+    }
+    section .newsContainer .image img{
+        width: 260px;
+        height: 225px;
+    }
+}
+@media screen and (min-width: 351px) and (max-width:700px){
+    section{
+        height: 140vh;
+    }
+    section .newsContainer{
+        height: 95%;
+        width: 95%;
+    }
+    section .newsContainer .image{
+        width: 500px;
+        height: 250px;
+        /* border: solid red; */
+    }
+    section .newsContainer .image img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width:1150px){
+    section{
+        height: auto;
+    }
+}
+@media screen and (min-width: 1151px) {
+    section{
+        height: 85vh;
+    }
+    section .newsContainer{
+        height: 80%;
+        width: 70%;
+        overflow: hidden;
+    }
+}
