@@ -155,12 +155,16 @@ main article .detail a {
   padding: .3em;
   background-color: orangered;
   color: #fff;
-  border: solid #fff;
+  /* border: solid #fff; */
   cursor: pointer;
   box-shadow: 5px 5px 10px grey;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
   transition: .3s  ease-in-out;
 }
 main article .detail a:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -241,7 +245,7 @@ section .newsContainer p {
   }
   main article {
     height: 95%;
-    border: solid;
+    /* border: solid; */
   }
   main article {
     flex-direction: column;
