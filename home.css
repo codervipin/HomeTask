@@ -160,7 +160,7 @@ main article .detail a {
   box-shadow: 5px 5px 10px grey;
   transition: .3s  ease-in-out;
 }
-main article .detail button:hover{
+main article .detail a:hover{
     transform: scale(1.1);
 }
 
