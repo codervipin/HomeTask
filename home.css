@@ -155,7 +155,7 @@ main article .detail a {
   padding: .3em;
   background-color: orangered;
   color: #fff;
-  /* border: solid red; */
+  border: solid #fff;
   cursor: pointer;
   box-shadow: 5px 5px 10px grey;
   transition: .3s  ease-in-out;
