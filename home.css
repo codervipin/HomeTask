@@ -141,17 +141,21 @@ main article .detail .news {
 main article .detail .news p {
   width: 100%;
   height: 100%;
-
-  /* border: solid red */
+  /* border: solid red; */
   line-height: 1.6;
 }
-main article .detail button {
+main article .detail a {
+  display: inline-block;
+  text-decoration: none;
   margin-top: 10px;
   width: 150px;
   height: 35px;
+  text-align: center;
+  align-content: center;
+  padding: .3em;
   background-color: orangered;
   color: #fff;
-  border: none;
+  /* border: solid red; */
   cursor: pointer;
   box-shadow: 5px 5px 10px grey;
   transition: .3s  ease-in-out;
@@ -199,7 +203,7 @@ section .newsContainer p {
 
 @media screen and (max-width: 570px) {
   main {
-    height: 85vh;
+    height: 95vh;
   }
   main .allNews .category {
     margin-left: 0.5em;
@@ -236,7 +240,8 @@ section .newsContainer p {
     /* background-color: red; */
   }
   main article {
-    height: 98%;
+    height: 95%;
+    border: solid;
   }
   main article {
     flex-direction: column;
@@ -244,8 +249,14 @@ section .newsContainer p {
     text-align: center;
     padding: 1em;
   }
+  main article .posted{
+    margin-top: .2em;
+  }
   main article .detail {
-    height: 60%;
+    height: 55%;
+  }
+  main article .detail h2{
+    font-size: 1.4em;
   }
   main article .detail .news {
     height: 42%;
